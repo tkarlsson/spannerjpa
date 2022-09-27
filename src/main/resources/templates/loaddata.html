@@ -2,18 +2,15 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Base data</title>
 </head>
 <body>
-  <h1>Welcome</h1>
-
-  <h2>Artists</h2>
-
+  <h1>Loaded base data</h1>
   <table width='40%'>
-      <tr><th align='left'>id</th><th align='left'>name</th></tr>
-      <tr th:each="artistitem: ${artists}">
-          <td th:text="${artistitem.id}" />
-          <td th:text="${artistitem.name}" />
+      <tr><th align='left'>type</th><th align='left'>records</th></tr>
+      <tr>
+          <td>Artists</td><td th:text="${totArtists}" />
+          <td>Records</td><td th:text="${totRecords}" />
       </tr>
   </table>
 </body>
