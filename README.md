@@ -13,5 +13,5 @@ $REGION - Region to deploy.
 
 ## Run
 ``gcurl='curl --header "Authorization: Bearer $(gcloud auth print-identity-token)"'. 
-gcurl https://<service url>.a.run.app/loaddata
+gcurl https://<service url>.a.run.app/loaddata. 
 gcurl https://<service url>.a.run.app/``
