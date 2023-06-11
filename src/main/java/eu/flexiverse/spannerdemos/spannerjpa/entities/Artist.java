@@ -15,6 +15,9 @@ public class Artist {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "artist_metadata", )
+    private String artistMetaData;
+
     public String getName() {
         return name;
     }
